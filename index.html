@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Konversi Suhu</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -12,12 +12,65 @@
     <h1>Welcome to Website Konversi Suhu-Jufry09</h1>
 </header>
 
-<-- Main content -->
+<!-- Main content -->
 <main>
-    <-- Introduction -->
+    <!-- Introduction -->
     <section>
         <p>Masukkan suhu dalam derajat Celcius (C) ke dalam kotak di bawah...</p>
     </section>
-</main>
+
+    <!-- Form Konversi suhu -->
+    <form class="padding-medium">
+
+        <!-- Input suhu dalam Celcius -->
+        <div>
+            <label for="celsius">Suhu dalam Celcius (C):</label>
+            <input type="number" id="celsius" name="suhu" required>
+        </div>
+
+        <!-- Pilihan konversi suhu -->
+        <div>
+            <button class="bg-lightseagreen">Konversi</button>
+            <button class="bg-lightcoral">Reset</button>
+            <button class="bg-lightblue">Reverse</button>
+        </div>
+    </form>
+
+    <!-- Hasil konversi suhu -->
+        <section class="padding-medium">
+            <div>
+                <label for="hasil-suhu">Fahrenheit (&deg;F):</label>
+                <textarea id="hasil-suhu" readonly></textarea>
+            </div>
+        </section>
+
+    <!-- Penjelasan suhu -->
+    <section class="padding-medium">
+        <div>
+            <label for="detail-suhu">Penjelasan:</label>
+            <textarea id="detail-suhu" readonly></textarea>
+        </div>
+    </section>
+
+    <section>
+        <header>
+            <h2>Cara Konversi dari suhu Celcius (&deg;C) ke suhu Fahrenheit (&deg;F)</h2>
+        </header>
+
+        <hr>
+
+        <div>
+            <p>Introduction dari rumus konversi suhu...</p>
+            <p class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32</p>
+            <p>Atau</p>
+            <p class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</p>
+        </div>
+    </section>
+    </main>
+
+<!-- Footer Content -->
+<footer>
+    <p>&copy; 2023 Jufry09. All rights reserved.</p>
+</footer>
 </body>
 </html>
