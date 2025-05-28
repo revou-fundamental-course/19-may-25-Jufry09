@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Konversi Suhu</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- Header Content-->
@@ -16,23 +16,23 @@
 <main>
     <!-- Introduction -->
     <section>
-        <p>Masukkan suhu dalam derajat Celcius (C) ke dalam kotak di bawah...</p>
+        <p>Masukkan suhu dalam derajat Celsius (°C) ke dalam kotak di bawah...</p>
     </section>
 
     <!-- Form Konversi suhu -->
     <form class="padding-medium">
 
-        <!-- Input suhu dalam Celcius -->
+        <!-- Input suhu dalam Celsius -->
         <div>
-            <label for="celsius">Suhu dalam Celcius (C):</label>
-            <input type="number" id="celsius" name="suhu" required>
+            <label for="input-suhu">Suhu dalam Celsius (°C):</label>
+            <input type="number" id="input-suhu" name="suhu">
         </div>
 
         <!-- Pilihan konversi suhu -->
         <div>
-            <button class="bg-lightseagreen">Konversi</button>
-            <button class="bg-lightcoral">Reset</button>
-            <button class="bg-lightblue">Reverse</button>
+            <button type="button" class="bg-lightseagreen" onclick="convertToFahrenheit()">Konversi</button>
+            <button type="button" class="bg-lightblue" onclick="reverseConversion()">Reverse</button>
+            <button type="button" class="bg-lightcoral" onclick="resetForm()">Reset</button>
         </div>
     </form>
 
@@ -54,10 +54,10 @@
 
     <section>
         <header>
-            <h2>Cara Konversi dari suhu Celcius (&deg;C) ke suhu Fahrenheit (&deg;F)</h2>
+            <h2>Cara Konversi dari suhu Celsius (&deg;C) ke suhu Fahrenheit (&deg;F)</h2>
         </header>
 
-        <hr>
+        <hr />
 
         <div>
             <p>Introduction dari rumus konversi suhu...</p>
@@ -72,5 +72,6 @@
 <footer>
     <p>&copy; 2023 Jufry09. All rights reserved.</p>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -7,9 +7,10 @@
 
 body {
     justify-items: center;
-    background-color: antiquewhite;
     font-family: monospace;
     padding: 20px;
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+
 }
 
 /* Layout Utama */
@@ -29,6 +30,10 @@ footer {
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 18px;
+}
+
 footer p {
     font-size: 14px;
     color: #666;
@@ -45,6 +50,11 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     resize: none;
+}
+
+.input-error {
+    border: 1px solid red !important;
+    background-color: #ffe6e6;
 }
 
 /* Tombol */
